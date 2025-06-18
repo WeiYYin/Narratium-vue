@@ -1,0 +1,10 @@
+$cl-cb: #cb0b0c;
+$cl-8d: #8daf27;
+$cl-f7: #f7f7f4;
+$cl-ff: #ff4d4f;
+$cl-ee: #ee7e14;
+$cl-4f: #4fb0ff;
+
+@function px-to-vm($px) {
+    @return $px / 1920 * 100vw;
+}

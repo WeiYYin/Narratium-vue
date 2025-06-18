@@ -1,0 +1,200 @@
+:root {
+  // font-size: calc(100vw / 19.2);
+}
+
+@mixin PlaceColor($color) {
+  &::-webkit-input-placeholder {
+    /* WebKit browsers */
+    color: $color;
+  }
+
+  &::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: $color;
+  }
+
+  &:-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    color: $color;
+  }
+}
+
+@mixin T_flex_row($justify: center, $align: center) {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row;
+  align-items: $align;
+  justify-content: $justify;
+}
+
+@mixin T_flex_column($justify: center, $align: center) {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  align-items: $align;
+  justify-content: $justify;
+}
+
+@mixin T_font($size: 14px, $color: #000) {
+  font-size: $size;
+  color: $color;
+}
+
+.ml-at {
+  margin-left: auto;
+}
+
+.mr-at {
+  margin-right: auto;
+}
+
+.mh-at {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ta-l {
+  text-align: left;
+}
+
+.ta-r {
+  text-align: right;
+}
+
+.ta-c {
+  text-align: center;
+}
+
+@for $var from 1 to 201 {
+  .w-#{$var} {
+    width: $var * 1px;
+  }
+  .h-#{$var} {
+    height: $var * 1px;
+  }
+  .mt-#{$var} {
+    margin-top: $var * 1px;
+  }
+  .mb-#{$var} {
+    margin-bottom: $var * 1px;
+  }
+  .ml-#{$var} {
+    margin-left: $var * 1px;
+  }
+  .mr-#{$var} {
+    margin-right: $var * 1px;
+  }
+  .mh-#{$var} {
+    margin-left: $var * 1px;
+    margin-right: $var * 1px;
+  }
+  .mv-#{$var} {
+    margin-top: $var * 1px;
+    margin-bottom: $var * 1px;
+  }
+  .ph-#{$var} {
+    padding-left: $var * 1px;
+    padding-right: $var * 1px;
+  }
+  .pv-#{$var} {
+    padding-top: $var * 1px;
+    padding-bottom: $var * 1px;
+  }
+  .pt-#{$var} {
+    padding-top: $var * 1px;
+  }
+  .pb-#{$var} {
+    padding-bottom: $var * 1px;
+  }
+  .pl-#{$var} {
+    padding-left: $var * 1px;
+  }
+  .pr-#{$var} {
+    padding-right: $var * 1px;
+  }
+  .pd-#{$var} {
+    padding: $var * 1px;
+  }
+
+  .lh-#{$var} {
+    line-height: $var * 1px;
+  }
+  .lhh-#{$var} {
+    height: $var * 1px;
+    line-height: $var * 1px;
+  }
+}
+
+@for $i from 1 to 100 {
+  .ft-#{$i} {
+    font-size: $i * 1px;
+  }
+}
+
+.h100 {
+  height: 100%;
+}
+
+.w100 {
+  width: 100%;
+}
+
+.wh100 {
+  width: 100%;
+  height: 100%;
+}
+
+.T_vertical {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.T_nowrap {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.t-center {
+  text-align: center;
+}
+
+.fw-b {
+  font-weight: bold;
+}
+
+.fl-1 {
+  flex: 1;
+}
+
+.oh-a {
+  overflow: auto;
+}
+
+.oh-h {
+  overflow: hidden;
+}
+
+.v-super {
+  vertical-align: super;
+}
+.c-pointer {
+  cursor: pointer;
+}
+.p-right {
+  position: absolute;
+  right: 10px;
+  top: 0;
+  font-weight: 400;
+}
+
+.p-wrap {
+  white-space: pre-wrap;
+  div {
+    white-space: pre-wrap !important;
+  }
+}
+
+.a-ration {
+  text-decoration: underline;
+}

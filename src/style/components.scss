@@ -1,0 +1,195 @@
+.SmartDialog {
+    .el-overlay-dialog {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .el-dialog {
+        width: inherit;
+        padding: 0;
+        margin: 0;
+        border-radius: 12px;
+        background: #fff;
+
+        &__header {
+            padding: 0 24px;
+            height: 70px;
+            line-height: 70px;
+            border-bottom: 2px solid #f9f9f9;
+        }
+
+        &__headerbtn {
+            line-height: 70px;
+            right: 10px;
+            font-size: 20px;
+            height: 70px;
+            color: #999;
+            &:hover {
+                color: #999;
+            }
+        }
+
+        &__title {
+            color: #3d3d3d;
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        &__footer {
+            padding: 14px 24px;
+        }
+    }
+}
+
+.SmartMessageBox.el-message-box {
+    padding: 0;
+    width: inherit;
+    border-radius: 12px;
+
+    .el-message-box {
+        &__header {
+            padding: 0 24px;
+            height: 70px;
+            line-height: 70px;
+            border-bottom: 2px solid #f9f9f9;
+        }
+
+        &__title {
+            line-height: 70px;
+            color: #3d3d3d;
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        &__headerbtn {
+            line-height: 70px;
+            right: 10px;
+            font-size: 20px;
+            height: 70px;
+            font-weight: bold;
+            color: #999;
+            &:hover {
+                color: #999;
+            }
+        }
+
+        &__message {
+            width: 100%;
+        }
+    }
+}
+
+.SmartBtn,
+.SmartButton {
+    &.el-button {
+        cursor: pointer;
+        padding: 0 4px;
+        height: 36px;
+        border-radius: 6px;
+
+        span {
+            letter-spacing: 6px;
+            text-indent: 8px;
+        }
+
+        &.is-text {
+            border: 1px solid var(--el-button-border-color);
+            height: 24px;
+            line-height: 24px;
+
+            span {
+                letter-spacing: 0;
+                text-indent: 0;
+            }
+        }
+
+        &--success {
+            --el-color-success: #{$cl-8d};
+            --el-color-success-light-3: #{$cl-8d};
+            --el-color-success-light-5: #{$cl-8d};
+            --el-color-info-dark-2: #{$cl-8d};
+
+            &.is-text {
+                background: #f4f5f1;
+
+                &:active {
+                    background: #f4f5f1;
+                }
+            }
+        }
+
+        &--primary {
+            --el-color-primary: #{$cl-4f};
+            --el-color-primary-light-3: #{$cl-4f};
+            --el-color-primary-light-5: #{$cl-4f};
+            --el-color-info-dark-2: #{$cl-4f};
+
+            &.is-text {
+                background: #fcfcfc;
+
+                &:active {
+                    background: #fcfcfc;
+                }
+            }
+        }
+
+        &--info {
+            color: #3d3d3d;
+            --el-color-info: #{$cl-f7};
+            --el-color-info-light-3: #{$cl-f7};
+            --el-color-info-light-5: #{$cl-f7};
+            --el-color-info-dark-2: #{$cl-f7};
+
+            &:hover {
+                color: #3d3d3d;
+            }
+
+            &.is-text {
+                background: #f6f6f6;
+                color: #999999;
+                --el-color-info-light-5: #999999;
+
+                &:active {
+                    background: #f6f6f6;
+                }
+            }
+        }
+
+        &.SmartBtn--dashed {
+            border: 1px dashed #e8e8e8;
+        }
+
+        &--danger {
+            --el-color-danger: #{$cl-ff};
+            --el-color-danger-light-3: #{$cl-ff};
+            --el-color-danger-light-5: #{$cl-ff};
+
+            &.is-text {
+                background: #fff1f0;
+            }
+        }
+
+        &--warning {
+            --el-color-warning: #{$cl-ee};
+            --el-color-warning-light-3: #{$cl-ee};
+            --el-color-warning-light-5: #{$cl-ee};
+
+            &.is-text {
+                background: #fff9f3;
+            }
+        }
+
+        &.spaceNone {
+            span {
+                padding: 0 12px;
+                text-indent: 0;
+                letter-spacing: 0;
+            }
+        }
+    }
+}
+
+td.td-cl-8d {
+    color: $cl-8d;
+}
